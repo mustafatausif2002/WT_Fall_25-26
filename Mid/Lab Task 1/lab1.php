@@ -71,7 +71,7 @@
     </tr>
     <tr>
         <td>
-            <b></b> <br>
+            <b>Username:</b> <br>
             <input type="text" style="width:98%"> <br>
         </td>    
     </tr>
