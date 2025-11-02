@@ -6,11 +6,12 @@
         table{
             border-style: solid;
             position: center;
-            background: light;
+            background: #FDE7B3;
+            width:50%;
         }
     </style>
 </head>
-<body style="font-family: Arial; background-color:; justify-content:center; padding:0 0 0 500px">
+<body style="font-family: Arial;; justify-content:center; padding:0 0 0 500px">
 
 
     <h1 style="color:Blue;padding:0 0 0 50px">Clinic Patient Registration </h1>
@@ -19,7 +20,7 @@
 
 
 
-    <table style="width:50%;" style="width:98%">
+    <table>
         <tr>
     <tr>
         <td>
