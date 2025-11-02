@@ -2,8 +2,118 @@
 <html>
 <head>
     <title>Document</title>
+    <style>
+        table{
+            border-style: solid;
+            position: center;
+            background: light;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello World</h1>
+<body style="font-family: Arial; background-color:; justify-content:center; padding:0 0 0 500px">
+
+
+    <h1 style="color:Blue;padding:0 0 0 50px">Clinic Patient Registration </h1>
+
+
+
+
+
+    <table style="width:50%;" style="width:98%">
+        <tr>
+    <tr>
+        <td>
+            <b>Full Name:</b> <br>
+            <input type="text" style="width:98%"> <br>
+        </td>    
+    </tr>
+    <tr>
+        <td>
+            <b>Age:</b> <br>
+            <input type="text" style="width:98%"> <br>
+        </td>    
+    </tr>
+    <tr>
+        <td>
+            <b>Email Address:</b> <br>
+            <input type="text" style="width:98%"> <br>
+        </td>    
+    </tr>
+
+    <tr>
+        <td>
+            <b>Insurance Provider:</b>
+             <br>
+            <select style="width:98%">
+            <option>Select Provider</option>
+            <option>Provider 1</option>
+            <option>Provider 2</option>
+            <option>Provider 3</option>
+        </select>  
+        </td>    
+    </tr>
+
+    <tr>
+        <td>
+            <b>Insurance Policy Number:</b>
+             <br>
+            <input type="number" style="width:98%"> <br>
+        </td>    
+    </tr>
+    </tr>
+    
+    <tr>
+        <center>
+        <td>   
+                <h2 style="color:Blue;padding:0 0 0 120px" >Additional Information</h2>
+        </td> 
+        </center>   
+    </tr>
+    <tr>
+        <td>
+            <b></b> <br>
+            <input type="text" style="width:98%"> <br>
+        </td>    
+    </tr>
+    <tr>
+        <td>
+           <b>Password:</b>   <br>
+            <input type="password" style="width:98%"> <br>
+        </td>    
+    </tr>
+    <tr>
+        <td>
+           <b>Confirm Password:</b>   <br>
+            <input type="Password" style="width:98%"> <br><br>
+        </td>    
+    </tr>
+    <tr>
+        <td>
+            <Button type="submit" style="background-color:blue; color: white; width:100%">Register <br>
+        </td>    
+    </tr>
+
+
+
+            
+
+         
+
+
+
+
+
+
+    </table>
+
+    
+    
+
+    
+
+
+
+
+
 </body>
 </html>
