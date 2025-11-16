@@ -56,7 +56,7 @@
 
     <form onsubmit="return handleSubmit()">
 
-    <h2>Participant Registration</h1>
+    <h2>Participant Registration</h2>
 
     Full Name:<br>
     <input type="text" id="name"> <br>
