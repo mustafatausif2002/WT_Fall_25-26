@@ -64,11 +64,11 @@
     </tr>
     
     <tr>
-        <center>
+
         <td>   
-                <h2 style="color:Blue;padding:0 0 0 120px" >Additional Information</h2>
+                <h2 style="color:Blue; padding:0 0 0 120px" >Additional Information</h2>
         </td> 
-        </center>   
+
     </tr>
     <tr>
         <td>
