@@ -40,7 +40,7 @@
       margin-top: 20px;
       text-align: center;
       font-size: 16px;
-      color: #003366;
+      color: #076a19ff;
     }
  
     #error {
@@ -59,28 +59,25 @@
     <h2>Participant Registration</h2>
 
     Full Name:<br>
-    <input type="text" id="name"> <br>
+    <input type="text" id="name" /> <br>
 
     Email: <br>
-    <input type="text" id="email"> <br>
+    <input type="text" id="email"/> <br>
 
     Phone Number: <br>
-    <input type="number" id="phone"> <br>
+    <input type="number" id="phone"/> <br>
 
     Password: <br>
-    <input type="password" id="password"> <br>
+    <input type="password" id="password"/> <br>
 
     Confirm Password: <br>
-    <input type="password" id="confirmpassword"> <br>
+    <input type="password" id="confirmpassword"/> <br>
 
     <button type="submit">Register</button>
+      <div id="error"></div>
+  <div id="output"></div>
     </form>
 
-
-
-
-  <div id="error"></div>
-  <div id="output"></div>
 
     <script>
     function handleSubmit() {
@@ -104,7 +101,7 @@
         return false;
       }
  
-      if (email.includes("@")) {
+      if (!email.includes('@')) {
         errorDiv.innerHTML = " Email must be @";
         return false;
       }
@@ -113,7 +110,7 @@
         errorDiv.innerHTML = " Phone Numbe must be digit";
         return false;
       }
-      if (password !== confirmpassword) {
+      if (password !=== confirmpassword) {
         errorDiv.innerHTML = " Password do not match";
         return false;
       }
