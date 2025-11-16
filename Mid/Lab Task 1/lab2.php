@@ -110,9 +110,15 @@
       }
 
       if (isNaN(phonenumber)) {
-        errorDiv.innerHTML = " Phone Numbe must be numeric.";
+        errorDiv.innerHTML = " Phone Numbe must be digit";
         return false;
       }
+      if (password !== confirmpassword) {
+        errorDiv.innerHTML = " Password do not match";
+        return false;
+      }
+
+
  
  
       outputDiv.innerHTML = `
