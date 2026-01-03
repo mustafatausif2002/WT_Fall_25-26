@@ -3,7 +3,7 @@ body {
     background-color: #f2f2f2;
 }
 
-.login-box {
+.login {
     width: 350px;
     margin: 120px auto;
     padding: 25px;
@@ -12,24 +12,24 @@ body {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.login-box h2 {
+.login h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.login-box label {
+.login label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.login-box input {
+.login input {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
 }
 
-.login-box button {
+.login button {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -38,6 +38,6 @@ body {
     border: none;
 }
 
-.login-box button:hover {
+.login button:hover {
     background-color: #34495e;
 }
