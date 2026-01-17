@@ -43,16 +43,16 @@ $result = $conn->query($sql);
 
         <?php while($row = $result->fetch_assoc()) { ?>
         <tr>
-            <td><?= $row['inquiry_id'] ?></td>
-            <td><?= $row['buyer_name'] ?></td>
-            <td><?= $row['buyer_email'] ?></td>
+            <td><?php echo $row['inquiry_id']; ?></td>
+            <td><?php echo $row['buyer_name']; ?></td>
+            <td><?php echo $row['buyer_email']; ?></td>
             <td>
-                <?= $row['property_title'] ?> <br>
-                <?= $row['location'] ?> <br>
-                $<?= $row['price'] ?>
+                <?php echo $row['property_title']; ?> <br>
+                <?php echo $row['location']; ?> <br>
+                $<?php echo $row['price']; ?>
             </td>
-            <td><?= $row['message'] ?></td>
-            <td><?= $row['response'] ? $row['response'] : "No response yet" ?></td>
+            <td><?php echo $row['message']; ?></td>
+            <td><?php echo $row['response'] ? $row['response'] : "No response yet" ?></td>
         </tr>
         <?php } ?>
     </table>
