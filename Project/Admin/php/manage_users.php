@@ -2,13 +2,12 @@
 session_start();
 include "../db/db.php";
 
-// Session check
 if (!isset($_SESSION['admin_id'])) {
     header("Location: ../html/login.html");
     exit;
 }
 
-// DELETE USER
+//delete
 if (isset($_GET['delete_id'])) {
     $id = $_GET['delete_id'];
     $sql = "DELETE FROM Users WHERE user_id='$id'";
@@ -17,7 +16,7 @@ if (isset($_GET['delete_id'])) {
     exit;
 }
 
-// EDIT USER - FETCH DATA
+//edit
 if (isset($_GET['edit_id'])) {
     $edit_id = $_GET['edit_id'];
     $edit_sql = "SELECT * FROM Users WHERE user_id='$edit_id'";
@@ -25,7 +24,7 @@ if (isset($_GET['edit_id'])) {
     $edit_row = $edit_result->fetch_assoc();
 }
 
-// UPDATE USER
+//update
 if (isset($_POST['update_user'])) {
 
     $id = $_POST['user_id'];
@@ -46,7 +45,7 @@ if (isset($_POST['update_user'])) {
     exit;
 }
 
-// Fetch all users
+
 $sql = "SELECT * FROM Users";
 $result = $conn->query($sql);
 ?>
