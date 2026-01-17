@@ -2,22 +2,18 @@
 session_start();
 include "../db/db.php";
 
-// Admin session check
 if (!isset($_SESSION['admin_id'])) {
     header("Location: ../html/login.html");
     exit;
 }
 
-// Fetch all inquiries with buyer & property details
 $sql = "
-SELECT i.inquiry_id, i.message, i.response, i.property_id, i.buyer_id,
-       u.name AS buyer_name, u.email AS buyer_email,
-       p.title AS property_title, p.location, p.price
+SELECT i.inquiry_id, i.message, i.response, i.property_id, i.buyer_id, u.name AS buyer_name, u.email AS buyer_email, 
+p.title AS property_title, p.location, p.price
 FROM Inquiries i
 JOIN Users u ON i.buyer_id = u.user_id
 JOIN Properties p ON i.property_id = p.property_id
-ORDER BY i.inquiry_id DESC
-";
+ORDER BY i.inquiry_id DESC";
 
 $result = $conn->query($sql);
 ?>
@@ -31,7 +27,9 @@ $result = $conn->query($sql);
 <body>
 
 <div class="container">
-    <h2>Buyer Inquiries</h2>
+    <h2>Buyer & Seller Inquiries</h2>
+    
+    <a class="back" href="dashboard.php">Back to Dashboard</a>
 
     <table>
         <tr>
@@ -59,7 +57,6 @@ $result = $conn->query($sql);
         <?php } ?>
     </table>
 
-    <a class="back" href="dashboard.php">⬅ Back to Dashboard</a>
 </div>
 
 </body>
