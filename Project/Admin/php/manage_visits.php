@@ -62,11 +62,11 @@ $result = $conn->query($sql);
 
         <?php while($row = $result->fetch_assoc()) { ?>
         <tr>
-            <td><?= $row['request_id'] ?></td>
-            <td><?= $row['buyer_name'] ?></td>
-            <td><?= $row['property_title'] ?></td>
-            <td><?= $row['property_location'] ?></td>
-            <td><?= $row['status'] ?></td>
+            <td><?php echo $row['request_id']; ?></td>
+            <td><?php echo $row['buyer_name']; ?></td>
+            <td><?php echo $row['property_title']; ?></td>
+            <td><?php echo $row['property_location']; ?></td>
+            <td><?php echo $row['status']; ?></td>
             <td>
                 <a class="approve" href="manage_visits.php?action=approve&id=<?= $row['request_id'] ?>">Approve</a>
                 <a class="reject" href="manage_visits.php?action=reject&id=<?= $row['request_id'] ?>">Reject</a>
