@@ -36,6 +36,9 @@ if (isset($_POST['login'])) {
             $_SESSION['admin_id'] = $admin['admin_id'];
             $_SESSION['admin_name'] = $admin['name'];
 
+            setcookie("admin_email", $email, time() + 86400, "/");
+            setcookie("admin_name", $admin['name'], time() + 86400, "/");
+
             header("Location: ../html/dashboard.html");
             exit;
         } else {
