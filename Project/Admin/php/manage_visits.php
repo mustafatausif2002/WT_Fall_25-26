@@ -2,11 +2,10 @@
 session_start();
 include "../db/db.php";
 
-if (!isset($_SESSION['admin_id'])) {
+if (!isset($_SESSION['admin_id']) && !isset($_COOKIE['admin_email'])) {
     header("Location: ../html/login.html");
     exit;
 }
-
 
 
 if (isset($_GET['action']) && isset($_GET['id'])) {
